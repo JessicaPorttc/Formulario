@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="bt-pt">
+    <meta charset="utf-8">
+    <head>
+        <title>
+            Formulário de Cadastro de Clientes
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                        <label>Nome Completo*</label><label class="validation-error hide" id="nomeCompletoValidationError"> Este campo é obrigatório.</label>
+                        <input type="text" name="nomeCompleto" id="nomeCompleto">
+                        </div>
+                        <div>
+                            <label>Email*</label><label class="validation-error hide" id="emailValidationError"> Este campo é obrigatório.</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div>
+                            <label>CPF ou CNPJ*</label><label class="validation-error hide" id="cpfOuCnpjValidationError"> Este campo é obrigatório.</label>
+                            <input type="text" name="cpfOuCnpj" id="cpfOuCnpj">
+                        </div>
+                         <div>
+                            <label>Telefone*</label><label class="validation-error hide" id="telefoneValidationError"> Este campo é obrigatório.</label>
+                            <input type="text" name="telefone" id="telefone">
+                        </div>
+                        <div>
+                            <label>CEP*</label><label class="validation-error hide" id="cepValidationError"> Este campo é obrigatório.</label>
+                            <input type="text" name="cep" id="cep">
+                        </div>
+                        <div>
+                            <label>Logradouro*</label><label class="validation-error hide" id="logradouroValidationError"> Este campo é obrigatório.</label>
+                            <input type="text" name="logradouro" id="logradouro">
+                        </div>
+                        <div>
+                            <label>Número*</label><label class="validation-error hide" id="númeroValidationError"> Este campo é obrigatório.</label>
+                            <input type="text" name="número" id="número">
+                        </div>
+                        <div>
+                            <label>Bairro*</label><label class="validation-error hide" id="bairroValidationError"> Este campo é obrigatório.</label>
+                            <input type="text" name="bairro" id="bairro">
+                        </div>
+                        <div>
+                            <label>Cidade*</label><label class="validation-error hide" id="cidadeValidationError"> Este campo é obrigatório.</label>
+                            <input type="text" name="cidade" id="cidade">
+                        </div>
+                        <div>
+                            <label>Estado*</label><label class="validation-error hide" id="estadoValidationError"> Este campo é obrigatório.</label>
+                            <input type="text" name="estado" id="estado">
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="ListaDeClientes">
+                        <thead>
+                            <tr>
+                                <th>Nome Completo</th>
+                                <th>Email</th>
+                                <th>CPF ou CNPJ</th>
+                                <th>Telefone</th>
+                                <th>CEP</th>
+                                <th>Logradouro</th>
+                                <th>Número</th>
+                                <th>Bairro</th>
+                                <th>Cidade</th>
+                                <th>Estado</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>    
